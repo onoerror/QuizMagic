@@ -17,8 +17,9 @@ public class QuizMagic extends AppCompatActivity {
     public void mu(View view) {
         //mu是一個變數
         TextView mu = (TextView)findViewById(R.id.textany);
-        //文字檔案 變數 = (轉文字檔)
+        //文字檔案 變數 = (轉文字檔)搜尋需轉換的物件（物件身分證）
         mu.setText("你沒有這個命!");
+        //變數.文字類別(文字字串)
     }
 
 
