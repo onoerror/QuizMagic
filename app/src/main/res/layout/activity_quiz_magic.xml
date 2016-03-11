@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.quizmagic.quizmagic.QuizMagic">
+    tools:context="com.quizmagic.quizmagic.QuizMagic"
+    android:background="@drawable/cg">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -19,20 +20,45 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="New Button"
-            android:id="@+id/button" />
+            android:text="命運"
+            android:id="@+id/button"
+            android:background="@drawable/un"
+            android:onClick="mu"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" />
 
         <Button
             android:layout_width="100dp"
+            android:onClick="st"
             android:layout_height="100dp"
-            android:text="New Button"
-            android:id="@+id/button2" />
+            android:text="屬性"
+            android:id="@+id/button2"
+            android:background="@drawable/un"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2" />
 
         <Button
+            android:onClick="nz"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="New Button"
-            android:id="@+id/button3" />
+            android:text="能力"
+            android:id="@+id/button3"
+            android:background="@drawable/un"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
 
     </LinearLayout>
 
@@ -40,25 +66,51 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp">
 
         <Button
+            android:onClick="ju"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="New Button"
-            android:id="@+id/button4" />
+            android:text="種族"
+            android:id="@+id/button4"
+            android:background="@drawable/un"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3" />
 
         <Button
+            android:onClick="jz"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="New Button"
-            android:id="@+id/button5" />
+            android:text="智力"
+            android:id="@+id/button5"
+            android:background="@drawable/un"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4" />
 
         <Button
+            android:onClick="out"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="New Button"
-            android:id="@+id/button6" />
+            android:text="離開"
+            android:id="@+id/button6"
+            android:background="@drawable/un"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,6 +120,7 @@
         android:gravity="center_horizontal">
 
         <TextView
+            android:id="@+id/textany"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="你想問些什麼?"
